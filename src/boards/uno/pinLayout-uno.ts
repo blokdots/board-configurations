@@ -23,7 +23,6 @@ const pinsTopRow: (Pin | null)[] = [
 const pinsBottomRow: Pin[] = ["A5", "A4", "A3", "A2", "A1", "A0"];
 
 const pinLayoutUno: PinLayout = {
-  width: 69,
   pinMargin: { right: 3, top: 1, bottom: 1, left: 0 },
   pins: [
     ...pinsTopRow.map((p, i) => ({

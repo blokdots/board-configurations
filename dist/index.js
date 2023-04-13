@@ -37,7 +37,6 @@ var pinsTopRow = [
 ];
 var pinsBottomRow = ["A5", "A4", "A3", "A2", "A1", "A0"];
 var pinLayoutUno = {
-  width: 69,
   pinMargin: { right: 3, top: 1, bottom: 1, left: 0 },
   pins: [
     ...pinsTopRow.map((p, i) => ({
@@ -103,6 +102,7 @@ var BoardUno = {
   },
   pinLayout: pinLayout_uno_default,
   shield: "Base",
+  width: 69,
   boardSvg: uno_default
 };
 var board_uno_default = BoardUno;

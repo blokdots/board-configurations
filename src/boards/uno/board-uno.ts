@@ -4,7 +4,6 @@ import boardSvg from "./uno.svg";
 import pinLayoutUno from "./pinLayout-uno";
 
 const BoardUno: BoardConfiguration = {
-  boardType: "uno",
   board: "Arduino Uno",
   fqbn: "arduino:avr:uno",
   firmataName: "StandardFirmataPlus.ino",
@@ -24,8 +23,8 @@ const BoardUno: BoardConfiguration = {
   ],
   param: {
     pins: [
-      0,
-      1,
+      // 0,
+      // 1,
       2,
       3,
       4,
@@ -47,10 +46,15 @@ const BoardUno: BoardConfiguration = {
       "SDA",
       "SCL",
     ],
-    pwm: [3, 5, 6, 9, 10, 11, 13],
+    pwm: [3, 5, 6, 9, 10, 11],
+    sda: 18,
+    scl: 19,
+    rx: 0,
+    tx: 1,
   },
   pinLayout: pinLayoutUno,
   shield: "Base",
+  width: 69,
   boardSvg: boardSvg,
 };
 export default BoardUno;

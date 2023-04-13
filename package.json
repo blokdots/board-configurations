@@ -5,9 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "esbuild ./src/index.js --platform=node --loader:.svg=dataurl  --bundle --outfile=dist/index.js",
+    "build": "esbuild ./src/index.js --platform=node --loader:.svg=dataurl --bundle --outfile=dist/index.js",
     "build:types": "tsc --emitDeclarationOnly && rollup -c",
-    "dev": "esbuild ./src/index.js --platform=node --loader:.svg=dataurl  --bundle --watch --outfile=dist/index.js",
+    "dev": "esbuild ./src/index.js --platform=node --loader:.svg=dataurl --bundle --watch --outfile=dist/index.js",
     "prettier": "prettier --write 'src/**/*.{t,j}s'"
   },
   "repository": {
@@ -29,7 +29,7 @@
     "esbuild": "^0.12.15",
     "prettier": "^2.3.2",
     "rollup": "^3.12.0",
-    "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-dts": "^5.3.0",
     "typescript": "^4.9.5"
   },
   "dependencies": {}
