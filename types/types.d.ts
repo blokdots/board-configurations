@@ -39,8 +39,9 @@ export type ShieldConfiguration = {
     readonly name: ShieldName;
     readonly slots: SlotConfig[];
 };
+export type BoardName = "Arduino Uno";
 export type BoardConfiguration = {
-    readonly board: string;
+    readonly board: BoardName;
     readonly fqbn: string;
     readonly firmataName: string;
     readonly ids: readonly {
