@@ -39,10 +39,10 @@ type ShieldConfiguration = {
     readonly name: ShieldName;
     readonly slots: SlotConfig[];
 };
-type BoardName = "Arduino Uno";
+type BoardName = "Arduino Uno" | "Arduino Nano" | "Arduino Mega" | "Arduino Leonardo" | "Seeeduino Lotus" | "Arduino Micro" | "Arduino MKR WiFi 1010";
 type BoardConfiguration = {
     readonly board: BoardName;
-    readonly fqbn: string;
+    readonly fqbn: `${string}:${string}:${string}`;
     readonly firmataName: string;
     readonly ids: readonly {
         readonly vid: string;

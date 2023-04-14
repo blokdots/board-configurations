@@ -39,10 +39,10 @@ export type ShieldConfiguration = {
     readonly name: ShieldName;
     readonly slots: SlotConfig[];
 };
-export type BoardName = "Arduino Uno";
+export type BoardName = "Arduino Uno" | "Arduino Nano" | "Arduino Mega" | "Arduino Leonardo" | "Seeeduino Lotus" | "Arduino Micro" | "Arduino MKR WiFi 1010";
 export type BoardConfiguration = {
     readonly board: BoardName;
-    readonly fqbn: string;
+    readonly fqbn: `${string}:${string}:${string}`;
     readonly firmataName: string;
     readonly ids: readonly {
         readonly vid: string;

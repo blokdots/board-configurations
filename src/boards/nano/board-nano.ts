@@ -1,30 +1,22 @@
 import type { BoardConfiguration } from "../../types";
 
-import boardSvg from "../../svgs/uno.svg";
-import pinLayoutUno from "./pinLayout-uno";
+import boardSvg from "../../svgs/nano.svg";
+import pinLayoutNano from "./pinLayout-nano";
 
 const BoardUno: BoardConfiguration = {
-  board: "Arduino Uno",
-  fqbn: "arduino:avr:uno",
+  board: "Arduino Nano",
+  fqbn: "arduino:avr:nano",
   firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
-      vid: "2a03",
-      pid: "0043",
-    },
-    {
-      vid: "2341",
-      pid: "0043",
-    },
-    {
-      vid: "2341",
-      pid: "0001",
+      vid: "0403",
+      pid: "6001",
     },
   ],
   param: {
     pins: [
-      // 0,
-      // 1,
+      // 0, // Rx
+      // 1, // Tx
       2,
       3,
       4,
@@ -41,20 +33,22 @@ const BoardUno: BoardConfiguration = {
       "A1",
       "A2",
       "A3",
-      "A4",
-      "A5",
+      // "A4", // SDA
+      // "A5", // SCL
+      "A6",
+      "A7",
       "SDA",
       "SCL",
     ],
     pwm: [3, 5, 6, 9, 10, 11],
-    sda: 18,
-    scl: 19,
+    sda: "A4",
+    scl: "A5",
     rx: 0,
     tx: 1,
   },
-  pinLayout: pinLayoutUno,
-  shield: "Base",
-  width: 69,
+  pinLayout: pinLayoutNano,
+  shield: "Nano",
+  width: 45,
   boardSvg: boardSvg,
 };
 export default BoardUno;

@@ -1,30 +1,26 @@
 import type { BoardConfiguration } from "../../types";
 
-import boardSvg from "../../svgs/uno.svg";
-import pinLayoutUno from "./pinLayout-uno";
+import boardSvg from "../../svgs/mkr.svg";
+import pinLayoutMKRWiFi from "./pinLayout-mkr_wifi";
 
 const BoardUno: BoardConfiguration = {
-  board: "Arduino Uno",
-  fqbn: "arduino:avr:uno",
+  board: "Arduino MKR WiFi 1010",
+  fqbn: "arduino:samd:mkrwifi1010",
   firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
-      vid: "2a03",
-      pid: "0043",
+      vid: "2341",
+      pid: "8054",
     },
     {
       vid: "2341",
-      pid: "0043",
-    },
-    {
-      vid: "2341",
-      pid: "0001",
+      pid: "0054",
     },
   ],
   param: {
     pins: [
-      // 0,
-      // 1,
+      0,
+      1,
       2,
       3,
       4,
@@ -34,9 +30,10 @@ const BoardUno: BoardConfiguration = {
       8,
       9,
       10,
-      11,
-      12,
-      13,
+      // 11, // sda
+      // 12, // scl
+      // 13, // rx
+      // 14, // tx
       "A0",
       "A1",
       "A2",
@@ -46,15 +43,15 @@ const BoardUno: BoardConfiguration = {
       "SDA",
       "SCL",
     ],
-    pwm: [3, 5, 6, 9, 10, 11],
-    sda: 18,
-    scl: 19,
-    rx: 0,
-    tx: 1,
+    pwm: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    sda: 11,
+    scl: 12,
+    rx: 13,
+    tx: 14,
   },
-  pinLayout: pinLayoutUno,
-  shield: "Base",
-  width: 69,
+  pinLayout: pinLayoutMKRWiFi,
+  shield: "MKR",
+  width: 62,
   boardSvg: boardSvg,
 };
 export default BoardUno;

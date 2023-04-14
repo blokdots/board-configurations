@@ -1,32 +1,28 @@
 import type { BoardConfiguration } from "../../types";
 
-import boardSvg from "../../svgs/uno.svg";
-import pinLayoutUno from "./pinLayout-uno";
+import boardSvg from "../../svgs/micro.svg";
+import pinLayoutMicro from "./pinLayout-micro";
 
 const BoardUno: BoardConfiguration = {
-  board: "Arduino Uno",
-  fqbn: "arduino:avr:uno",
+  board: "Arduino Micro",
+  fqbn: "arduino:avr:micro",
   firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
-      vid: "2a03",
-      pid: "0043",
+      vid: "2341",
+      pid: "8037",
     },
     {
       vid: "2341",
-      pid: "0043",
-    },
-    {
-      vid: "2341",
-      pid: "0001",
+      pid: "0037",
     },
   ],
   param: {
     pins: [
-      // 0,
-      // 1,
-      2,
-      3,
+      // 0, // rx
+      // 1, // tx
+      // 2, // sda
+      // 3, // scl
       4,
       5,
       6,
@@ -37,24 +33,25 @@ const BoardUno: BoardConfiguration = {
       11,
       12,
       13,
+      14,
+      15,
+      16,
+      17,
       "A0",
       "A1",
       "A2",
       "A3",
       "A4",
       "A5",
-      "SDA",
-      "SCL",
     ],
-    pwm: [3, 5, 6, 9, 10, 11],
-    sda: 18,
-    scl: 19,
+    pwm: [4, 5, 6, 9, 10, 11, 13],
+    sda: 2,
+    scl: 3,
     rx: 0,
     tx: 1,
   },
-  pinLayout: pinLayoutUno,
-  shield: "Base",
-  width: 69,
+  pinLayout: pinLayoutMicro,
+  width: 47,
   boardSvg: boardSvg,
 };
 export default BoardUno;

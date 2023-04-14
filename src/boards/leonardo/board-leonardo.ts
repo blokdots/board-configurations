@@ -1,24 +1,20 @@
 import type { BoardConfiguration } from "../../types";
 
 import boardSvg from "../../svgs/uno.svg";
-import pinLayoutUno from "./pinLayout-uno";
+import pinLayoutLeonardo from "./pinLayout-leonardo";
 
 const BoardUno: BoardConfiguration = {
-  board: "Arduino Uno",
-  fqbn: "arduino:avr:uno",
+  board: "Arduino Leonardo",
+  fqbn: "arduino:avr:leonardo",
   firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
+      vid: "2341",
+      pid: "8036",
+    },
+    {
       vid: "2a03",
-      pid: "0043",
-    },
-    {
-      vid: "2341",
-      pid: "0043",
-    },
-    {
-      vid: "2341",
-      pid: "0001",
+      pid: "0036",
     },
   ],
   param: {
@@ -46,13 +42,13 @@ const BoardUno: BoardConfiguration = {
       "SDA",
       "SCL",
     ],
-    pwm: [3, 5, 6, 9, 10, 11],
+    pwm: [3, 5, 6, 9, 10, 11, 13],
     sda: 18,
     scl: 19,
     rx: 0,
     tx: 1,
   },
-  pinLayout: pinLayoutUno,
+  pinLayout: pinLayoutLeonardo,
   shield: "Base",
   width: 69,
   boardSvg: boardSvg,
