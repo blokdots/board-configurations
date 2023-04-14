@@ -1,19 +1,32 @@
+"use strict";
 var __defProp = Object.defineProperty;
-var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
-  __markAsModule(target);
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
 };
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // src/index.ts
-__export(exports, {
+var src_exports = {};
+__export(src_exports, {
   boardConfigs: () => boardConfigs,
   shieldConfigs: () => shieldConfigs
 });
+module.exports = __toCommonJS(src_exports);
 
 // src/boards/uno/uno.svg
-var uno_default = "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9Ijc4IiB2aWV3Qm94PSIwIDAgOTkgNzgiIHdpZHRoPSI5OSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtODUuNSAyOS45MDU2MzU3YzIuOTYwNzgzMiAzLjEzNjMwMjMgMi40OTI4NzQxIDIuNTIyMDQ1MSAyLjQ5Mjg3NDEgMi41MjIwNDUxLjI4MDA3NzkuMjEyOTQ1Ni41MDcxMjU5LjY2NTc2LjUwNzEyNTkgMS4wMjM5NDkzdjQ2LjQzNDA4OTJjMCAuMzUyNTY1OS0uMTQ2OTY5My44ODM5NjA4LS4zNjYwODIxIDEuMTc2NzIwNyAwIDAgLjMzNzgyMS0uMjE3MjgxNy0yLjYzMzkxNzkgMy4wMjE2MTUxdjMuMTE1MDU1MmMwIC43MTg0NjE1LS41ODgxNTUgMS4zMDA4ODk3LTEuMzAyNDYzMSAxLjMwMDg4OTdoLTkzLjM5NTA3Mzg0Yy0uNzE5MzMwNDggMC0xLjMwMjQ2MzA2LS41ODI5OTU3LTEuMzAyNDYzMDYtMS4yODg3NTgydi03NS40MjI0ODM2YzAtLjcxMTc2MTUuNTg2NTcyMTktMS4yODg3NTgyIDEuMzAwMzkxODQtMS4yODg3NTgyaDkyLjAzMjk0MTQ2YzIuNjY2NjY3NSAyLjM3NTU2MDYuMjYzODM2NSAwIDIuNjY2NjY2NyAyLjY2NjY2Njd6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwLjUgLTEwLjUpIi8+PC9zdmc+";
+var uno_default = 'data:image/svg+xml,<svg height="78" viewBox="0 0 99 78" width="99" xmlns="http://www.w3.org/2000/svg"><path d="m85.5 29.9056357c2.9607832 3.1363023 2.4928741 2.5220451 2.4928741 2.5220451.2800779.2129456.5071259.66576.5071259 1.0239493v46.4340892c0 .3525659-.1469693.8839608-.3660821 1.1767207 0 0 .337821-.2172817-2.6339179 3.0216151v3.1150552c0 .7184615-.588155 1.3008897-1.3024631 1.3008897h-93.39507384c-.71933048 0-1.30246306-.5829957-1.30246306-1.2887582v-75.4224836c0-.7117615.58657219-1.2887582 1.30039184-1.2887582h92.03294146c2.6666675 2.3755606.2638365 0 2.6666667 2.6666667z" fill-rule="evenodd" transform="translate(10.5 -10.5)"/></svg>';
 
 // src/boards/uno/pinLayout-uno.ts
 var pinsTopRow = [
@@ -55,7 +68,6 @@ var pinLayout_uno_default = pinLayoutUno;
 
 // src/boards/uno/board-uno.ts
 var BoardUno = {
-  boardType: "uno",
   board: "Arduino Uno",
   fqbn: "arduino:avr:uno",
   firmataName: "StandardFirmataPlus.ino",
@@ -75,8 +87,8 @@ var BoardUno = {
   ],
   param: {
     pins: [
-      0,
-      1,
+      // 0,
+      // 1,
       2,
       3,
       4,
@@ -98,7 +110,11 @@ var BoardUno = {
       "SDA",
       "SCL"
     ],
-    pwm: [3, 5, 6, 9, 10, 11, 13]
+    pwm: [3, 5, 6, 9, 10, 11],
+    sda: 18,
+    scl: 19,
+    rx: 0,
+    tx: 1
   },
   pinLayout: pinLayout_uno_default,
   shield: "Base",
