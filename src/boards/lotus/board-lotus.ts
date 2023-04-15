@@ -4,7 +4,7 @@ import boardSvg from "../../svgs/uno.svg";
 import pinLayoutLotus from "./pinLayout-lotus";
 
 const BoardUno: BoardConfiguration = {
-  board: "Arduino Uno",
+  board: "Seeeduino Lotus",
   fqbn: "arduino:avr:uno",
   firmataName: "StandardFirmataPlus.ino",
   ids: [
