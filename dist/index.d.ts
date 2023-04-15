@@ -1,5 +1,5 @@
 type Pin = number | `A${number}` | "SCL" | "SDA";
-type SlotPin = Pin | "I2C";
+type SlotPin = Exclude<Pin, "SCL" | "SDA"> | "I2C";
 type PinConfig = {
     readonly pin: Pin | null;
     readonly row: "top" | "bottom" | "right" | "right-2" | string;

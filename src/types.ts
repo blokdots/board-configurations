@@ -1,7 +1,7 @@
 // SDA and SCL are the I2C pins. We should transform them in the UI, not the config
 export type Pin = number | `A${number}` | "SCL" | "SDA";
 
-export type SlotPin = Pin | "I2C";
+export type SlotPin = Exclude<Pin, "SCL" | "SDA"> | "I2C";
 
 export type PinConfig = {
   readonly pin: Pin | null; // add null here for easier skipability in layout
