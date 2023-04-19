@@ -3,10 +3,9 @@ import type { BoardConfiguration } from "../../types";
 import boardSvg from "../../svgs/uno.svg";
 import pinLayoutLotus from "./pinLayout-lotus";
 
-const BoardUno: BoardConfiguration = {
+const BoardLotus: BoardConfiguration = {
   board: "Seeeduino Lotus",
   fqbn: "arduino:avr:uno",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "10c4",
@@ -48,4 +47,4 @@ const BoardUno: BoardConfiguration = {
   width: 69,
   boardSvg: boardSvg,
 };
-export default BoardUno;
+export default BoardLotus;

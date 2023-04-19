@@ -6,7 +6,6 @@ import pinLayoutUno from "./pinLayout-uno";
 const BoardUno: BoardConfiguration = {
   board: "Arduino Uno",
   fqbn: "arduino:avr:uno",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "2a03",

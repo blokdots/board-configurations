@@ -3,10 +3,9 @@ import type { BoardConfiguration } from "../../types";
 import boardSvg from "../../svgs/mkr.svg";
 import pinLayoutMKRWiFi from "./pinLayout-mkr_wifi";
 
-const BoardUno: BoardConfiguration = {
+const BoardMKRWiFi: BoardConfiguration = {
   board: "Arduino MKR WiFi 1010",
   fqbn: "arduino:samd:mkrwifi1010",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "2341",
@@ -54,4 +53,4 @@ const BoardUno: BoardConfiguration = {
   width: 62,
   boardSvg: boardSvg,
 };
-export default BoardUno;
+export default BoardMKRWiFi;

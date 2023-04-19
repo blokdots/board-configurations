@@ -67,10 +67,9 @@ var pinLayoutUno = {
 var pinLayout_leonardo_default = pinLayoutUno;
 
 // src/boards/leonardo/board-leonardo.ts
-var BoardUno = {
+var BoardLeonardo = {
   board: "Arduino Leonardo",
   fqbn: "arduino:avr:leonardo",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "2341",
@@ -117,7 +116,7 @@ var BoardUno = {
   width: 69,
   boardSvg: uno_default
 };
-var board_leonardo_default = BoardUno;
+var board_leonardo_default = BoardLeonardo;
 
 // src/boards/lotus/pinLayout-lotus.ts
 var pinsTopRow2 = [
@@ -174,10 +173,9 @@ var pinLayoutUno2 = {
 var pinLayout_lotus_default = pinLayoutUno2;
 
 // src/boards/lotus/board-lotus.ts
-var BoardUno2 = {
-  board: "Arduino Uno",
+var BoardLotus = {
+  board: "Seeeduino Lotus",
   fqbn: "arduino:avr:uno",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "10c4",
@@ -219,7 +217,7 @@ var BoardUno2 = {
   width: 69,
   boardSvg: uno_default
 };
-var board_lotus_default = BoardUno2;
+var board_lotus_default = BoardLotus;
 
 // src/svgs/mega.svg
 var mega_default = 'data:image/svg+xml,<svg fill="none" height="78" viewBox="0 0 141 78" width="141" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a-mega"><path d="m0 0h141v78h-141z"/></clipPath><g clip-path="url(%23a-mega)"><path clip-rule="evenodd" d="m138 19.4056c2.961 3.1363 2.493 2.5221 2.493 2.5221.28.2129.507.6657.507 1.0239v46.4341c0 .3526-.147.884-.366 1.1767 0 0 .338-.2172-2.634 3.0217v3.115c0 .7185-.588 1.3009-1.303 1.3009h-135.39454c-.719327 0-1.30246-.583-1.30246-1.2888v-75.42244c0-.711763.586573-1.28876 1.30039-1.28876h134.03261c2.667 2.37556.264.00000024 2.667 2.66667z" fill="%23000" fill-rule="evenodd"/></g></svg>%0A';
@@ -339,10 +337,9 @@ var pinLayoutUno3 = {
 var pinLayout_mega_default = pinLayoutUno3;
 
 // src/boards/mega/board-mega.ts
-var BoardUno3 = {
+var BoardUno = {
   board: "Arduino Mega",
   fqbn: "arduino:avr:mega",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "2341",
@@ -435,7 +432,7 @@ var BoardUno3 = {
   width: 103,
   boardSvg: mega_default
 };
-var board_mega_default = BoardUno3;
+var board_mega_default = BoardUno;
 
 // src/svgs/micro.svg
 var micro_default = 'data:image/svg+xml,<svg height="31" viewBox="0 0 58 18" width="99" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h58v18h-58z"/></svg>';
@@ -471,10 +468,9 @@ var pinLayoutUno4 = {
 var pinLayout_micro_default = pinLayoutUno4;
 
 // src/boards/micro/board-micro.ts
-var BoardUno4 = {
+var BoardMicro = {
   board: "Arduino Micro",
   fqbn: "arduino:avr:micro",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "2341",
@@ -522,7 +518,7 @@ var BoardUno4 = {
   width: 47,
   boardSvg: micro_default
 };
-var board_micro_default = BoardUno4;
+var board_micro_default = BoardMicro;
 
 // src/svgs/mkr.svg
 var mkr_default = 'data:image/svg+xml,<svg fill="none" height="25" viewBox="0 0 62 25" width="62" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a-mkr"><path d="m0 0h62v25h-62z"/></clipPath><g clip-path="url(%23a-mkr)"><path d="m0 0h62v25h-62z" fill="%23000"/></g></svg>%0A';
@@ -561,10 +557,9 @@ var pinLayoutUno5 = {
 var pinLayout_mkr_wifi_default = pinLayoutUno5;
 
 // src/boards/mkr_wifi/board-mkr_wifi.ts
-var BoardUno5 = {
+var BoardMKRWiFi = {
   board: "Arduino MKR WiFi 1010",
   fqbn: "arduino:samd:mkrwifi1010",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "2341",
@@ -612,7 +607,7 @@ var BoardUno5 = {
   width: 62,
   boardSvg: mkr_default
 };
-var board_mkr_wifi_default = BoardUno5;
+var board_mkr_wifi_default = BoardMKRWiFi;
 
 // src/svgs/nano.svg
 var nano_default = 'data:image/svg+xml,<svg fill="none" height="31" viewBox="0 0 93 31" width="93" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a-nano"><path d="m0 0h93v31h-93z"/></clipPath><g clip-path="url(%23a-nano)"><path d="m93 .137695h-93v30.724105h93z" fill="%23000"/></g></svg>%0A';
@@ -650,10 +645,9 @@ var pinLayoutUno6 = {
 var pinLayout_nano_default = pinLayoutUno6;
 
 // src/boards/nano/board-nano.ts
-var BoardUno6 = {
+var BoardNano = {
   board: "Arduino Nano",
   fqbn: "arduino:avr:nano",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "0403",
@@ -698,7 +692,7 @@ var BoardUno6 = {
   width: 45,
   boardSvg: nano_default
 };
-var board_nano_default = BoardUno6;
+var board_nano_default = BoardNano;
 
 // src/boards/uno/pinLayout-uno.ts
 var pinsTopRow7 = [
@@ -739,10 +733,9 @@ var pinLayoutUno7 = {
 var pinLayout_uno_default = pinLayoutUno7;
 
 // src/boards/uno/board-uno.ts
-var BoardUno7 = {
+var BoardUno2 = {
   board: "Arduino Uno",
   fqbn: "arduino:avr:uno",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "2a03",
@@ -793,7 +786,7 @@ var BoardUno7 = {
   width: 69,
   boardSvg: uno_default
 };
-var board_uno_default = BoardUno7;
+var board_uno_default = BoardUno2;
 
 // src/shields/base/shield-base.ts
 var ShieldBase = {

@@ -3,10 +3,9 @@ import type { BoardConfiguration } from "../../types";
 import boardSvg from "../../svgs/nano.svg";
 import pinLayoutNano from "./pinLayout-nano";
 
-const BoardUno: BoardConfiguration = {
+const BoardNano: BoardConfiguration = {
   board: "Arduino Nano",
   fqbn: "arduino:avr:nano",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "0403",
@@ -51,4 +50,4 @@ const BoardUno: BoardConfiguration = {
   width: 45,
   boardSvg: boardSvg,
 };
-export default BoardUno;
+export default BoardNano;

@@ -43,7 +43,6 @@ export type BoardName = "Arduino Uno" | "Arduino Nano" | "Arduino Mega" | "Ardui
 export type BoardConfiguration = {
     readonly board: BoardName;
     readonly fqbn: `${string}:${string}:${string}`;
-    readonly firmataName: string;
     readonly ids: readonly {
         readonly vid: string;
         readonly pid: string;

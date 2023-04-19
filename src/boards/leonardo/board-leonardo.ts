@@ -3,10 +3,9 @@ import type { BoardConfiguration } from "../../types";
 import boardSvg from "../../svgs/uno.svg";
 import pinLayoutLeonardo from "./pinLayout-leonardo";
 
-const BoardUno: BoardConfiguration = {
+const BoardLeonardo: BoardConfiguration = {
   board: "Arduino Leonardo",
   fqbn: "arduino:avr:leonardo",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "2341",
@@ -53,4 +52,4 @@ const BoardUno: BoardConfiguration = {
   width: 69,
   boardSvg: boardSvg,
 };
-export default BoardUno;
+export default BoardLeonardo;

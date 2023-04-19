@@ -3,10 +3,9 @@ import type { BoardConfiguration } from "../../types";
 import boardSvg from "../../svgs/micro.svg";
 import pinLayoutMicro from "./pinLayout-micro";
 
-const BoardUno: BoardConfiguration = {
+const BoardMicro: BoardConfiguration = {
   board: "Arduino Micro",
   fqbn: "arduino:avr:micro",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "2341",
@@ -54,4 +53,4 @@ const BoardUno: BoardConfiguration = {
   width: 47,
   boardSvg: boardSvg,
 };
-export default BoardUno;
+export default BoardMicro;

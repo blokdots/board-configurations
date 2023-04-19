@@ -61,8 +61,6 @@ export type BoardName =
 export type BoardConfiguration = {
   readonly board: BoardName;
   readonly fqbn: `${string}:${string}:${string}`;
-  readonly firmataName: string;
-  // readonly firmata: string; // File? Path?
   readonly ids: readonly {
     readonly vid: string;
     readonly pid: string;

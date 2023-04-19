@@ -6,7 +6,6 @@ import pinLayoutMega from "./pinLayout-mega";
 const BoardUno: BoardConfiguration = {
   board: "Arduino Mega",
   fqbn: "arduino:avr:mega",
-  firmataName: "StandardFirmataPlus.ino",
   ids: [
     {
       vid: "2341",
