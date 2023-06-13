@@ -52,5 +52,8 @@ const BoardMKRWiFi: BoardConfiguration = {
   shield: "MKR",
   width: 62,
   boardSvg: boardSvg,
+  docs: {
+    boardLink: "https://docs.arduino.cc/hardware/mkr-wifi-1010",
+  },
 };
 export default BoardMKRWiFi;

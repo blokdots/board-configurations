@@ -49,5 +49,8 @@ const BoardNano: BoardConfiguration = {
   shield: "Nano",
   width: 45,
   boardSvg: boardSvg,
+  docs: {
+    boardLink: "https://docs.arduino.cc/hardware/nano",
+  },
 };
 export default BoardNano;

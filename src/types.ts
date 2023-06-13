@@ -78,4 +78,10 @@ export type BoardConfiguration = {
   readonly boardSvg: string;
   readonly pinLayout: PinLayout;
   readonly shield?: ShieldName | ShieldName[];
+  readonly docs: {
+    /** The link to the board, e.g. on the Arduino website. */
+    readonly boardLink: string;
+    /** If there are any things to keep in mind for the board, e.g. drivers. (markdown) */
+    readonly notice?: string;
+  };
 };

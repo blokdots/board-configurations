@@ -114,7 +114,10 @@ var BoardLeonardo = {
   pinLayout: pinLayout_leonardo_default,
   shield: "Base",
   width: 69,
-  boardSvg: uno_default
+  boardSvg: uno_default,
+  docs: {
+    boardLink: "https://docs.arduino.cc/hardware/leonardo"
+  }
 };
 var board_leonardo_default = BoardLeonardo;
 
@@ -215,7 +218,11 @@ var BoardLotus = {
   pinLayout: pinLayout_lotus_default,
   shield: ["Lotus", "Base"],
   width: 69,
-  boardSvg: uno_default
+  boardSvg: uno_default,
+  docs: {
+    boardLink: "https://wiki.seeedstudio.com/Seeeduino_Lotus/",
+    notice: `You might have to install an [additional driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads) before the Seeeduino Lotus is recognized by blokdots.`
+  }
 };
 var board_lotus_default = BoardLotus;
 
@@ -430,7 +437,10 @@ var BoardUno = {
   pinLayout: pinLayout_mega_default,
   shield: ["Mega", "Base"],
   width: 103,
-  boardSvg: mega_default
+  boardSvg: mega_default,
+  docs: {
+    boardLink: "https://docs.arduino.cc/hardware/mega-2560"
+  }
 };
 var board_mega_default = BoardUno;
 
@@ -516,7 +526,10 @@ var BoardMicro = {
   },
   pinLayout: pinLayout_micro_default,
   width: 47,
-  boardSvg: micro_default
+  boardSvg: micro_default,
+  docs: {
+    boardLink: "https://docs.arduino.cc/hardware/micro"
+  }
 };
 var board_micro_default = BoardMicro;
 
@@ -605,7 +618,10 @@ var BoardMKRWiFi = {
   pinLayout: pinLayout_mkr_wifi_default,
   shield: "MKR",
   width: 62,
-  boardSvg: mkr_default
+  boardSvg: mkr_default,
+  docs: {
+    boardLink: "https://docs.arduino.cc/hardware/mkr-wifi-1010"
+  }
 };
 var board_mkr_wifi_default = BoardMKRWiFi;
 
@@ -690,7 +706,10 @@ var BoardNano = {
   pinLayout: pinLayout_nano_default,
   shield: "Nano",
   width: 45,
-  boardSvg: nano_default
+  boardSvg: nano_default,
+  docs: {
+    boardLink: "https://docs.arduino.cc/hardware/nano"
+  }
 };
 var board_nano_default = BoardNano;
 
@@ -784,7 +803,10 @@ var BoardUno2 = {
   pinLayout: pinLayout_uno_default,
   shield: "Base",
   width: 69,
-  boardSvg: uno_default
+  boardSvg: uno_default,
+  docs: {
+    boardLink: "https://docs.arduino.cc/hardware/uno-rev3"
+  }
 };
 var board_uno_default = BoardUno2;
 

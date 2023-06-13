@@ -52,5 +52,8 @@ const BoardMicro: BoardConfiguration = {
   pinLayout: pinLayoutMicro,
   width: 47,
   boardSvg: boardSvg,
+  docs: {
+    boardLink: "https://docs.arduino.cc/hardware/micro",
+  },
 };
 export default BoardMicro;

@@ -46,5 +46,9 @@ const BoardLotus: BoardConfiguration = {
   shield: ["Lotus", "Base"],
   width: 69,
   boardSvg: boardSvg,
+  docs: {
+    boardLink: "https://wiki.seeedstudio.com/Seeeduino_Lotus/",
+    notice: `You might have to install an [additional driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads) before the Seeeduino Lotus is recognized by blokdots.`,
+  },
 };
 export default BoardLotus;

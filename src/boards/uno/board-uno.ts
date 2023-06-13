@@ -55,5 +55,8 @@ const BoardUno: BoardConfiguration = {
   shield: "Base",
   width: 69,
   boardSvg: boardSvg,
+  docs: {
+    boardLink: "https://docs.arduino.cc/hardware/uno-rev3",
+  },
 };
 export default BoardUno;

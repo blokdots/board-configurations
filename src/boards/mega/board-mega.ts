@@ -97,5 +97,8 @@ const BoardUno: BoardConfiguration = {
   shield: ["Mega", "Base"],
   width: 103,
   boardSvg: boardSvg,
+  docs: {
+    boardLink: "https://docs.arduino.cc/hardware/mega-2560",
+  },
 };
 export default BoardUno;

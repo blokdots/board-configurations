@@ -51,5 +51,8 @@ const BoardLeonardo: BoardConfiguration = {
   shield: "Base",
   width: 69,
   boardSvg: boardSvg,
+  docs: {
+    boardLink: "https://docs.arduino.cc/hardware/leonardo",
+  },
 };
 export default BoardLeonardo;
